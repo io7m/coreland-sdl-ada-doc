@@ -1,0 +1,48 @@
+(subsection
+  (title "standard use cases")
+  (para-verbatim example "
+# compile Ada source using the library
+$ sdl-ada-conf compile cflags incdir
+-I/usr/local/include/coreland/sdl-ada 
+
+# link object files against the static library
+$ sdl-ada-conf compile ldflags slibdir
+-L/usr/local/lib/coreland/sdl-ada-static -lsdl-ada 
+
+# link object files against the dynamic library
+$ sdl-ada-conf compile ldflags dlibdir
+-L/usr/local/lib/coreland/sdl-ada -lsdl-ada 
+
+"))
+
+(subsection
+  (title "other use cases")
+  (para-verbatim example "
+$ sdl-ada-conf version
+sdl-ada 0.1 
+
+$ sdl-ada-conf incdir
+/usr/local/include/coreland/sdl-ada 
+
+$ sdl-ada-conf dlibdir
+/usr/local/lib/coreland/sdl-ada 
+
+$ sdl-ada-conf slibdir
+/usr/local/lib/coreland/sdl-ada-static 
+
+$ sdl-ada-conf cflags
+
+
+$ sdl-ada-conf ldflags
+-lsdl-ada 
+
+$ sdl-ada-conf compile incdir
+-I/usr/local/include/coreland/sdl-ada 
+
+$ sdl-ada-conf compile dlibdir
+-L/usr/local/lib/coreland/sdl-ada 
+
+$ sdl-ada-conf compile slibdir
+-L/usr/local/lib/coreland/sdl-ada-static 
+
+"))

@@ -1,0 +1,15 @@
+(section
+  (title "api reference")
+
+  (para "This package simply calls the " (item package "SDL")
+    " C API using wrapper functions with the appropriate Ada types.")
+
+  (para "The problem of providing documentation for simple \"thin\"
+    bindings is widely known - the documentation is essentially a
+    duplicate of the original API texts. As such, no documentation
+    is provided here. Please consult the package specification files
+    in the source distribution for type definitions, etc.")
+
+  (para "The documentation for the C API can be found at the "
+    (link-ext "http://www.libsdl.org/cgi/docwiki.cgi" "SDL documentation wiki")
+    "."))

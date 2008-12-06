@@ -1,15 +1,15 @@
 (section
-  (ref "stack-ada-conf")
-  (title "stack-ada-conf")
+  (ref "sdl-ada-conf")
+  (title "sdl-ada-conf")
 
   (section
     (title "synopsis")
     (para-verbatim
-"stack-ada-conf: [help] ops ..."))
+"sdl-ada-conf: [help] ops ..."))
 
   (section
     (title "description")
-    (para "The " (item command "stack-ada-conf") " program prints information
+    (para "The " (item command "sdl-ada-conf") " program prints information
      needed to compile and/or link against the library itself."))
 
   (section
@@ -47,7 +47,15 @@
           (item "Append newline to output.")))))
 
   (section
+    (title "note")
+    (para "Please note that this program only outputs information pertaining
+      to the bindings themselves. It is also necessary to execute "
+      (link-ext "http://www.libsdl.org/faq.php?action=listentries&category=3#21"
+        "sdl-config") " to determine what flags are required to link against
+      the " (item package "SDL") " library on your platform."))
+
+  (section
     (title "example")
     (ref "conf_example")
-    (include "t-stack-ada_exp.ud"))
+    (include "t-sdl-ada_exp.ud"))
 )

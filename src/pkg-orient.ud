@@ -4,7 +4,6 @@
   (section
     (title "overview")
 
-    (para "This package provides a simple dynamic stack based on the
-      Ada 2005 vector container package."))
-
+    (para "This package provides a set of Ada bindings to "
+      (link-ext "http://libsdl.org" "SDL") "."))
 ) ; end of section
