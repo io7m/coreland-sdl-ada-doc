@@ -1,7 +1,7 @@
 (section
   (title "Orientation")
 
-  (section
+  (subsection
     (title "Overview")
 
     (para "This package provides a set of Ada bindings to "
