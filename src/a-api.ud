@@ -1,5 +1,5 @@
 (section
-  (title "api reference")
+  (title "API Reference")
 
   (para "This package simply calls the " (item package "SDL")
     " C API using wrapper functions with the appropriate Ada types.")
